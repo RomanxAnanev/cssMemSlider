@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
 </head>
-<body>
-    <div class="slider middle">
-        <div class="slides">
 
+<body class="body">
+    <div class="slider middle">
             <input type="radio" name="sldr" id="sldr1" checked>
             <input type="radio" name="sldr" id="sldr2">
             <input type="radio" name="sldr" id="sldr3">
             <input type="radio" name="sldr" id="sldr4">
-
-            <div class="slide s1"><img src="img/1.jpg" class="img_sldr" alt="картинка 1"></div>
-            <div class="slide"><img src="img/2.jpg" class="img_sldr" alt="картинка 2"></div>
-            <div class="slide"><img src="img/3.jpg" class="img_sldr" alt="картинка 3"></div>
-            <div class="slide"><img src="img/4.jpg" class="img_sldr" alt="картинка 4"></div>
-
+            <div class="images">
+                <div class="slide s1"><img src="img/1.jpg" alt="картинка 1"></div>
+                <div class="slide"><img src="img/2.jpg" alt="картинка 2"></div>
+                <div class="slide"><img src="img/3.jpg" alt="картинка 3"></div>
+                <div class="slide"><img src="img/4.jpg" alt="картинка 4"></div>
+            </div>
+        <div class="text">
+            <p class="w1">one</p>
+            <p class="w2">two</p>
+            <p class="w3">three</p>
+            <p class="w4">four</p>
         </div>
-        <div class="slids_bar">
+    </div>
+    <div class="slider_bar">
+        <div class="navigation">
             <label for="sldr1" class="bar"></label>
             <label for="sldr2" class="bar"></label>
             <label for="sldr3" class="bar"></label>
@@ -30,4 +36,5 @@
         </div>
     </div>
 </body>
+
 </html>
