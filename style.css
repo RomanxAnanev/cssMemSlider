@@ -11,13 +11,7 @@
     overflow: hidden;
     border-radius: 10px;
 }
-.slider_bar{
-    width: 800px;
-    height: 500px;
-    margin: 10px auto;
-    display: flex;
-    justify-content: space-between;
-}
+
 .middle{
     margin: 0 auto;
 }
@@ -61,12 +55,18 @@ input[name="sldr"]{
     width: 100%;
     height: 100%;
 }
-.text{
-    color: black;
+.slider_bar{
+    width: 800px;
+    height: 500px;
+    margin: 10px auto;
     display: flex;
+    justify-content: space-between;
 }
-.text>p{
-    flex-basis: 100%;
+.p{
+    color: black; 
+}
+.word{
+    margin-right: 300px;
 }
 #sldr1:checked ~ .images .s1{
     margin-left: 0;
@@ -80,15 +80,29 @@ input[name="sldr"]{
 #sldr4:checked ~ .images .s1{
     margin-left: -75%;
 }
-#sldr1:checked ~ .images+.text .s1{
+.text{
+    overflow: hidden;
+    max-width: 300px;
+}
+.text_sldr{
+    display: flex;
+    width: 400%;
+}
+.text_sldr p{
+    display: block;
+    width: 25%;
+    transition: all 1s ease;
+}
+
+#sldr1:checked ~ .slider_bar .text .text__sldr .w1{  
     margin-left: 0;
 }
-#sldr2:checked ~ .images+.text .s1{
+#sldr2:checked ~ .slider_bar .text .text__sldr .w1{
     margin-left: -25%;
 }
-#sldr3:checked ~ .images+.text .s1{
+#sldr3:checked ~ .slider_bar .text .text__sldr .w1{
     margin-left: -50%;
 }
-#sldr4:checked ~ .images+.text .w4{
+#sldr4:checked ~ .slider_bar .text .text__sldr .w1{
     margin-left: -75%;
 }
