@@ -16,7 +16,7 @@
     height: 500px;
     margin: 10px auto;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
 }
 .middle{
     margin: 0 auto;
@@ -36,7 +36,7 @@
     transition: all .4s ease;
 }
 .bar:hover{
-    opacity:1;
+    opacity: 1;
     transform: scale(1.1);
     background-color: black;
 }
@@ -80,13 +80,13 @@ input[name="sldr"]{
 #sldr4:checked ~ .images .s1{
     margin-left: -75%;
 }
-#sldr1:checked ~ .images+.text .w1{
+#sldr1:checked ~ .images+.text .s1{
     margin-left: 0;
 }
-#sldr2:checked ~ .images+.text .w2{
+#sldr2:checked ~ .images+.text .s1{
     margin-left: -25%;
 }
-#sldr3:checked ~ .images+.text .w3{
+#sldr3:checked ~ .images+.text .s1{
     margin-left: -50%;
 }
 #sldr4:checked ~ .images+.text .w4{
